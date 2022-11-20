@@ -3,7 +3,8 @@ import { useState } from 'react';
 // import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 //import { searchFilterChange, statusFilterChange, priorityFilterChange } from '../../redux/actions';
-import filtersSlice from './filtersSliceReduxToolkit';
+//import filtersSlice from './filtersSliceReduxToolkit';
+import filtersSlice from './filtersSliceReduxThunk';
 
 const { Search } = Input;
 
