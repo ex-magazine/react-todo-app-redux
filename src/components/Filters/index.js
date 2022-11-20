@@ -15,7 +15,7 @@ export default function Filters() {
   
 
   const handleSeachTextChange = (e) => {   
-   // setSearchText(e.target.value);
+    setSearchText(e.target.value);
    // dispatch(searchFilterChange(e.target.value));
     dispatch(filtersSlice.actions.searchFilterChange(e.target.value));
   }
@@ -30,7 +30,7 @@ export default function Filters() {
   const handlePriorityChange = (value) => {
     setFilterPriorities(value);
     //dispatch(priorityFilterChange(value));
-    dispatch(filtersSlice.actions.priorityFilterChange(value));
+    dispatch(filtersSlice.actions.prioritiesFilterChange(value));
   }
 
   return (
@@ -42,7 +42,7 @@ export default function Filters() {
           Search
         </Typography.Paragraph>
         <Search 
-         // value={searchText}
+          value={searchText}
           placeholder='input search text' onChange={handleSeachTextChange}/>
       </Col>
       <Col sm={24}>
