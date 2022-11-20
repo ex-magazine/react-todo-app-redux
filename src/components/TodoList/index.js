@@ -43,7 +43,7 @@ export default function TodoList() {
         <Todo name='Learn JavaScript' prioriry='Low' /> */}
         {
           todoList.map (
-            todo => <Todo key={todo.id} name={todo.name} prioriry={todo.priority} /> 
+            todo => <Todo key={todo.id} name={todo.name} prioriry={todo.priority} completed={todo.completed} id={todo.id} /> 
           )
         }
       </Col>
